@@ -1,0 +1,264 @@
+:root {
+  --primary-color: #f6f6f6;
+  --secondary-color: #03a9f4;
+  --red-color: #b33939;
+  --dark-blue: #227093;
+  --green-color: #218c74;
+  --text-color: #7e7979;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+.header {
+  width: 900px;
+  height: 50px;
+  margin: 15px auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding-right: 10px;
+}
+nav {
+  position: relative;
+}
+a:hover {
+  color: #be2626;
+}
+section {
+  width: 900px;
+  margin: 15px auto;
+  background-color: var(--primary-color);
+}
+.services {
+  text-align: center;
+}
+.margin-bottom {
+  margin-bottom: 10px;
+}
+.spancolor-1 {
+  color: var(--secondary-color);
+}
+.spancolor-2 {
+  color: var(--primary-color);
+  font-size: 10px;
+}
+.bg-color {
+  background-color: #fff;
+  /* height: 250px; */
+}
+.benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefits img {
+  width: 70px;
+}
+.all-padding {
+  padding: 40px 60px;
+}
+.align-text {
+  text-align: center;
+}
+.p-color {
+  color: var(--text-color);
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+}
+.about img {
+  width: 300px;
+}
+.about-text {
+  padding: 25px;
+}
+.our-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.box {
+  width: 200px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.color-red {
+  background-color: var(--red-color);
+}
+.color-darkblue {
+  background-color: var(--dark-blue);
+}
+.color-green {
+  background-color: var(--green-color);
+}
+.p-size {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* skills */
+.centering-section {
+  width: 900;
+  height: 250px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills h1 {
+  margin-bottom: 15px;
+}
+.prog-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.prog-bar-1 {
+  width: 400px;
+  height: 20px;
+  background: linear-gradient(to right, #03a9f4 60%, #fff 40%);
+  position: absolute;
+}
+.prog-bar-1[data-tool-tip] {
+  position: relative;
+}
+.prog-bar-1[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  color: #fff;
+  font-size: small;
+  position: absolute;
+  right: 165px;
+  top: 1px;
+}
+.prog-bar-2 {
+  width: 400px;
+  height: 20px;
+  background: linear-gradient(to right, #03a9f4 70%, #fff 30%);
+  position: absolute;
+  left: 8px;
+}
+.prog-bar-2[data-tool-tip] {
+  position: relative;
+}
+.prog-bar-2[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  color: #fff;
+  font-size: small;
+  position: absolute;
+  right: 125px;
+  top: 1px;
+}
+.prog-bar-3 {
+  width: 400px;
+  height: 20px;
+  background: linear-gradient(to right, #03a9f4 80%, #fff 20%);
+  position: absolute;
+  left: -18px;
+}
+.prog-bar-3[data-tool-tip] {
+  position: relative;
+}
+.prog-bar-3[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  color: #fff;
+  font-size: small;
+  position: absolute;
+  right: 90px;
+  top: 1px;
+}
+.margin-right {
+  padding-right: 15px;
+}
+.prog-bar-4 {
+  width: 400px;
+  height: 20px;
+  background: linear-gradient(to right, #03a9f4 65%, #fff 35%);
+  position: absolute;
+  left: 8px;
+}
+.prog-bar-4[data-tool-tip] {
+  position: relative;
+}
+.prog-bar-4[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  color: #fff;
+  font-size: small;
+  position: absolute;
+  right: 150px;
+  top: 1px;
+}
+
+.prog-bar-5 {
+  width: 400px;
+  height: 20px;
+  background: linear-gradient(to right, #03a9f4 90%, #fff 10%);
+  position: absolute;
+}
+.prog-bar-5[data-tool-tip] {
+  position: relative;
+}
+.prog-bar-5[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  color: #fff;
+  font-size: small;
+  position: absolute;
+  right: 50px;
+  top: 1px;
+}
+.footer-sec footer {
+  width: 900px;
+  height: 70px;
+  background-color: #333333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+footer .osama {
+  color: var(--secondary-color);
+}
